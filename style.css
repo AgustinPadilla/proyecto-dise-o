@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cabecera {
+  background-color: ghostwhite;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url('/img/feed1.png');
+  background-position-x: center;
+  background-size: cover; */
+  padding: 10px;
+  margin: 0px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 5px
+}
+
+.navItem {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  transition: 300ms;
+}
+
+.navItem a, a:visited{
+  text-decoration: none;
+  color: black;
+  padding: 15px
+}
+
+.navItem:hover {
+  background-color: black;
+}
+
+.navItem:hover a{
+  color:aliceblue
+}
+
+.navItem:active {
+  background-color: #f1f1f1;
+  transition: 50ms;
+  transform: translateY(5px);
+}
+
+.contenidoCabecera {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 90px;
+}
+
+.descripcion {
+  color: rgb(85, 85, 85);
+}
+
+.btnProductos, .btnProductos:visited {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  transition: 300ms;
+  text-decoration: none;
+  padding: 15px;
+  background-color: black;
+  color: aliceblue;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
+}
+
+.btnProductos:hover{
+  background-color: #0CC0DF;
+}
+
+.btnProductos:active{
+  transition: 50ms;
+  box-shadow: none;
+  transform: translateY(5px);
+  background-color: #87edff;
+}
+
+.contenidoPrincipal {
+  width: 900px;
+}
+
+.contenidoPrincipal h2{
+  font-size: 40px;
+}
