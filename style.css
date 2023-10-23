@@ -111,7 +111,7 @@ body {
 }
 
 .contenidoPrincipal {
-  width: 900px;
+  width: 1200px;
 }
 
 .contenidoPrincipal h2{
@@ -132,7 +132,7 @@ body {
       "caja1 caja1 caja3 caja4"
       "caja5 caja5 caja8 caja8"
       "caja6 caja7 caja8 caja8";
-  height: 800px;
+  /* height: 800px; */
 }
 
 .caja img:hover{
@@ -143,7 +143,7 @@ body {
 }
 
 .caja img{
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -183,9 +183,11 @@ body {
 
 .gridProductos{
   display: grid;
-  grid-template-columns: repeat(2, 447px);
-  grid-template-rows: repeat(2, 260px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
+  width: 100%;
+  justify-content: center;
 }
 
 .producto {
@@ -308,6 +310,7 @@ body {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .lblFrec{
@@ -333,4 +336,58 @@ body {
 .btnSub{
   font-family: 'Poppins', sans-serif;
   border: none;
+}
+
+.hor-table{
+  margin-top: 70px;
+  background-color: #EDEDED;
+  border-radius: 10px;
+  border-spacing: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hor-header {
+  color: aliceblue;
+  background-color: black;
+  text-align: justify;
+}
+
+.hor-table th, td {
+  padding: 10px;
+}
+
+footer {
+  margin-top: 100px;
+  height: 30px;
+  background-color: #EDEDED;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer picture{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer img {
+  height: 25px;
+  object-fit: cover;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+.contenidoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 1200px;
 }
