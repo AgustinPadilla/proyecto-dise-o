@@ -5,6 +5,8 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
 .cabecera {
@@ -13,15 +15,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: url('/img/feed1.png');
+  background-image: url('/img/feed2.png');
   background-position-x: center;
-  background-size: cover; */
+  background-position-y: center;
+  background-size: cover;
   padding: 10px;
   margin: 0px;
 }
 
 .logo {
-  height: 40px;
+  height: 80px;
   width: auto;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -74,31 +77,33 @@ body {
 
 .titulo {
   font-size: 90px;
+  color: aliceblue;
 }
 
 .descripcion {
-  color: rgb(85, 85, 85);
+  margin-top: 5px;
+  color: aliceblue
 }
 
-.btnProductos, .btnProductos:visited {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.boton, .boton:visited{
+  width: fit-content;
   border-radius: 5px;
   transition: 300ms;
   text-decoration: none;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: black;
   color: aliceblue;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
 }
 
-.btnProductos:hover{
+.boton:hover{
   background-color: #0CC0DF;
 }
 
-.btnProductos:active{
+.boton:active{
   transition: 50ms;
   box-shadow: none;
   transform: translateY(5px);
@@ -111,4 +116,221 @@ body {
 
 .contenidoPrincipal h2{
   font-size: 40px;
+}
+
+.subtitulo {
+  color: rgb(91, 91, 91);
+}
+
+.gridMasVendido {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+      "caja1 caja1 caja2 caja2"
+      "caja1 caja1 caja3 caja4"
+      "caja5 caja5 caja8 caja8"
+      "caja6 caja7 caja8 caja8";
+  height: 800px;
+}
+
+.caja img:hover{
+  transform: scale(1.2);
+  border-radius: 0px;
+  transition: 400ms;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.322);
+}
+
+.caja img{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.caja1 {
+  grid-area: caja1;
+}
+
+.caja2 {
+  grid-area: caja2;
+}
+
+.caja3 {
+  grid-area: caja3;
+}
+
+.caja4 {
+  grid-area: caja4;
+}
+
+.caja5 {
+  grid-area: caja5;
+}
+
+.caja6 {
+  grid-area: caja6;
+}
+
+.caja7 {
+  grid-area: caja7;
+}
+
+.caja8 {
+  grid-area: caja8;
+}
+
+.gridProductos{
+  display: grid;
+  grid-template-columns: repeat(2, 447px);
+  grid-template-rows: repeat(2, 260px);
+  grid-gap: 10px;
+}
+
+.producto {
+  background-color: #EDEDED;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+}
+
+.producto:hover{
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: 400ms;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.322);
+}
+
+.imagenProducto {
+  width: 45%;
+  height: 100%;
+  border-radius: 10px 00px 0px 10px;
+  background-color: #e1cab4;
+}
+
+.imagenProducto img{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.infoProducto {
+  width: 55%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pProducto {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.precio {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.btnComprar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sn-section{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.sn-picture{
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.sn-imagen{
+  width: 100%;
+}
+
+.sn-info{
+  width: 60%;
+  padding-right: 30px;
+  font-size: 13px;
+}
+
+.informacion{
+  width: 100%;
+  display: flex;
+}
+
+.info-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-form label{
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(44, 44, 44);
+}
+
+.form-input{
+  width: 100%;
+}
+
+.form-input input {
+  height: 35px;
+  border: 1px solid rgb(44, 44, 44);
+  border-radius: 5px;
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10px;
+}
+
+.info-horario{
+  width: 50%;
+}
+
+.form-frecuencia{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lblFrec{
+  margin-bottom: 10px;
+}
+
+.radio{
+  display: flex;
+  align-items:center;
+  height: 30px;
+  gap: 5px;
+}
+
+.radio label{
+  color: rgb(44, 44, 44);
+  font-weight: 500;
+}
+
+.radio input{
+  margin-top: 0px;
+}
+
+.btnSub{
+  font-family: 'Poppins', sans-serif;
+  border: none;
 }
