@@ -16,16 +16,16 @@
     <nav>
       <ul class="navbar">
         <li class="navItem">
-          <a href="#">Lo mas vendido</a>
+          <a href="#masVendido">Lo mas vendido</a>
         </li>
         <li class="navItem">
-          <a href="#">Productos</a>
+          <a href="#productos">Productos</a>
         </li>
         <li class="navItem">
-          <a href="#">Sobre nosotros</a>
+          <a href="#sobreNosotros">Sobre nosotros</a>
         </li>
         <li class="navItem">
-          <a href="#">Informacion</a>
+          <a href="#informacion">Informacion</a>
         </li>
       </ul>
     </nav>
@@ -33,11 +33,11 @@
       <h1 class="titulo">Urbano y Auténtico: <u>Tu Look Único.</u></h1>
       <p class="descripcion">Descubre moda urbana auténtica con prendas de marcas reconocidas. Tu estilo único cobra
         vida con nuestra selección de alta calidad. Destaca en la multitud con las marcas más icónicas.</p>
-      <a class="boton" href="">Productos</a>
+      <a class="boton" href="#productos">Productos</a>
     </div>
   </header>
   <main class="contenidoPrincipal">
-    <article>
+    <article id="masVendido">
       <h2>Lo más vendido</h2>
       <p class="subtitulo">Descubre prendas de marcas reconocidas que definen la moda urbana. Desde camisetas hasta
         accesorios, nuestra colección te permite expresar tu estilo con autenticidad.</p>
@@ -84,7 +84,7 @@
         </figure>
       </div>
     </article>
-    <article>
+    <article id="productos">
       <h2>Productos</h2>
       <section class="gridProductos">
 
@@ -139,7 +139,7 @@
       </section>
     </article>
 
-    <article>
+    <article id="sobreNosotros">
       <h2>Sobre nosotros</h2>
       <section class="sn-section">
         <picture class="sn-picture">
@@ -163,23 +163,23 @@
       </section>
     </article>
 
-    <article>
+    <article id="informacion">
       <h2>Información</h2>
       <section class="informacion">
         <form class="info-form">
           <h3>Quieres estar al tanto de las novedades? Suscribete!</h3>
           <div class="form-input">
             <label for="txtNombre">Nombre completo</label> <br>
-            <input type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre...">
+            <input type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre..." required>
           </div>
           <div class="form-input">
             <label for="txtEmail">Email</label> <br>
-            <input type="text" name="txtEmail" id="txtEmail" placeholder="Ingrese su Email...">
+            <input type="text" name="txtEmail" id="txtEmail" placeholder="Ingrese su Email..." required>
           </div>
           <div class="form-frecuencia">
             <label class="lblFrec">Frecuencia</label> 
             <div class="radio">
-              <input type="radio" name="radioFrec" id="radioFrec1" >
+              <input type="radio" name="radioFrec" id="radioFrec1">
               <label for="radioFrec1">Semanal</label>
             </div>
             <div class="radio">
